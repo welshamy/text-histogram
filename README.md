@@ -3,29 +3,29 @@ Creating Textual Histogram for Large Text Files with Limited Memory
 
 Wesam Elshamy
 May 5, 2012
-================
 
-Abstract:
+
+Abstract
 ---------
 This document describes my solution to a test for a machine learning scientist job.  The goal is to generate a textual histogram for a large text file containing one 32-bit integer per line based on the given constraints.  To do so, I first sort the integers using a mix of quick sort and merge sort algorithms, then count the count contiguous occurrences of each unique integer.  This complexity of this algorithm is $\mathcal{O}(n\log(n))$ for $n$ integers, on average.
 
-How to run:
+How to run
 ------------
 To run this program you need a text input file with one integer per line.  A file (doc.in) of 100,000 randomly generated integers is provided with this code.
 
 First, compile the code:
 
-    javac TextHistogram.java
+    $ javac TextHistogram.java
 
 Second, run the code with 'doc.in' as the input file, and 'doc.out' as the output file:
 
-    java TextHistogram doc.in doc.out
+    $ java TextHistogram doc.in doc.out
 
-The problem:
+The problem
 -------------
 You have a file of one million 32-bit integers, one integer per line. Write a program that will count and output the number of times each unique integer value appears in the file (i.e. a textual histogram).
 
-Your solution must meet the following constraints.
+Your solution must meet the following constraints:
 
 - There is no prior knowledge about the integers' distribution, except that values
 might appear multiple times.
@@ -36,7 +36,7 @@ might appear multiple times.
 other constraints above.
 
 
-Algorithm description:
+Algorithm description
 ----------------------
 The main approach is to sort the integers first, then count the number of contiguously occurring integers in the sorted list.
 
