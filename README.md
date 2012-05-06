@@ -15,11 +15,11 @@ To run this program you need a text input file with one integer per line.  A fil
 
 First, compile the code:
 
-javac TextHistogram.java
+    javac TextHistogram.java
 
 Second, run the code with 'doc.in' as the input file, and 'doc.out' as the output file:
 
-java TextHistogram doc.in doc.out
+    java TextHistogram doc.in doc.out
 
 The problem:
 -------------
