@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 Wesam Elshamy <wesam elshamy gmail com>
+ * Copyright (C) 2012 Wesam Elshamy
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +36,7 @@ import java.util.List;
  * 
  * Each line in the output file contains an integer value followed by its count.
  * 
- * @author Wesam Elshamy <wesamelshamy@gmail.com>
+ * @author Wesam Elshamy
  * 
  */
 public class TextHistogram {
